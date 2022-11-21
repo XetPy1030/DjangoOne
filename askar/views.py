@@ -3,14 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def index(request):
-    http = [
-        'Ковин Аскар Александрович',
-        '16',
-        'Программирование, эксперименты',
-        '<a href="/about">about</a>',
-        '<a href="/contacts">contacts</a>'
-    ]
+def index(request, http):
     return HttpResponse('<br>'.join(http))
 
 def about(request):
